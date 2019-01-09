@@ -14,7 +14,7 @@ repository to, and then you'll need to change the remote of the frontend app to
 match the repo on github.
 
 ![](./app.gif)
-## Itteration: 0
+## Itteration 0
 
 Make an http request to `localhost:3001/types`. Once you've received the pokemon type data from the api you'll want to store it in the redux store.
 
