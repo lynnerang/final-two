@@ -14,15 +14,17 @@ repository to, and then you'll need to change the remote of the frontend app to
 match the repo on github.
 
 ![](./app.gif)
-## Itteration 0
 
-Make an http request to `localhost:3001/types`. Once you've received the pokemon type data from the api you'll want to store it in the redux store.
+## Iteration 0
 
-## Itteration 1
+First thing we want to do is fetch some info for us to display. **Thunks are not required**
+You are going to want to grab all the type data and populate a redux store. You should also have `isLoading` and `error` properties in your store. The data can be found at this API endpoint: `get /types`.
+
+## Iteration 1
 
 Lets work on the visual layer!
 
-Once you've populated the redux store with all the type data you are going to want to display them as Cards. While we wait for the data please give your app a loading gif.
+Once you've populated the redux store with all the type data you are going to want to display them as Cards. While we wait for the data please give your app a loading gif. Also, if there is an error fetching the data, please let the user know.
 ![](./loading.gif)
 
 ## Iteration 2
@@ -31,7 +33,7 @@ Now it's time to test! We just need to test our actions, reducers, mapStateToPro
 
 ** You are not required to test your async code (including thunks)
 
-## Itteration 3 (Extension)
+## Iteration 3 (Extension)
 
 If you look at the `type` data you'll notice there is a `pokemon` array that contains pokemon id's. You'll have to make a `get` request to `http://localhost:3001/pokemon/:id` to retrieve the corresponding pokemon.
 
