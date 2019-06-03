@@ -1,6 +1,8 @@
 # Pokedex
 
-## Setup
+## Setup - Choose Your Own Adventure
+
+### EITHER: 
 
 This application is built from create-react-app
 
@@ -15,6 +17,12 @@ match the repo on github.
 
 ![](./app.gif)
 
+### OR:
+
+Use `$ npx create-react-app pokedex` to create your own new React application. If you choose to do this, you may use this link to a loading gif (see iteration 1):
+```https://66.media.tumblr.com/c99a579db3ae0fc164bf4cca148885d3/tumblr_mjgv8kEuMg1s87n79o1_400.gif```
+or a link to a loading gif of your choice. Please do not waste more than 1 minute searching for a gif, though!
+
 ## Iteration 0
 
 First thing we want to do is fetch some info for us to display. **Thunks are not required**
@@ -24,7 +32,9 @@ You are going to want to grab all the type data and populate a redux store. You 
 
 Lets work on the visual layer!
 
-Once you've populated the redux store with all the type data you are going to want to display them as Cards. While we wait for the data please give your app a loading gif. Also, if there is an error fetching the data, please let the user know.
+Once you've populated the redux store with all the type data you are going to want to display them as Cards. While we wait for the data please give your app a loading gif. 
+
+Also, if there is an error fetching the data, please let the user know.
 
 ![](./loading.gif)
 
