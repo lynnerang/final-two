@@ -25,6 +25,7 @@ You are going to want to grab all the type data and populate a redux store. You 
 Lets work on the visual layer!
 
 Once you've populated the redux store with all the type data you are going to want to display them as Cards. While we wait for the data please give your app a loading gif. Also, if there is an error fetching the data, please let the user know.
+
 ![](./loading.gif)
 
 ## Iteration 2
