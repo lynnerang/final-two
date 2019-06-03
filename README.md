@@ -30,11 +30,7 @@ You are going to want to grab all the pokemon data and populate a redux store. Y
 
 Lets work on the visual layer!
 
-Once you've populated the redux store with all the pokemon data you are going to want to display them as Cards. While we wait for the data please give your app a loading gif. 
-
-Also, if there is an error fetching the data, please let the user know.
-
-![](./loading.gif)
+Once you've populated the redux store with all the pokemon data you are going to want to display them as Cards. While we wait for the data please give your app a loading gif. Also, if there is an error fetching the data, please let the user know.
 
 Display the following for each pokemon:
 `name`, `weight`, and display one of the pokemon `sprites`  
