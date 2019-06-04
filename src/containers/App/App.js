@@ -12,12 +12,12 @@ class App extends Component {
       .then(data => {
         this.props.addPokemonData(data)
         this.props.setError('')
-        this.props.setLoading(false)
+        // this.props.setLoading(false)
       })
       .catch(err => {
         console.log(err)
         this.props.setError('Unable to fetch pokemon data')
-        this.props.setLoading(false)
+        // this.props.setLoading(false)
       })
   }
 
@@ -27,7 +27,7 @@ class App extends Component {
     let page;
 
     if (this.props.isLoading) {
-      page = "Loading..."
+      page = <img src="https://66.media.tumblr.com/c99a579db3ae0fc164bf4cca148885d3/tumblr_mjgv8kEuMg1s87n79o1_400.gif" alt="Loading icon"/>
     } else if (this.props.error) {
       page = `${this.props.error}`
     }

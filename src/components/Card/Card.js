@@ -2,7 +2,7 @@ import React from 'react';
 
 const Card = props => {
   const { name, weight, sprites } = props.data;
-  console.log(sprites)
+
   const spriteList = Object.values(sprites).map(sprite => {
     let result;
     if (sprite) {
@@ -10,8 +10,6 @@ const Card = props => {
     }
     return result;
   })
-
-  console.log(spriteList)
 
   return (
     <article>
