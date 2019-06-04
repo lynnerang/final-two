@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import { addPokemonData, setLoading, setError } from '../../actions';
 import { connect } from 'react-redux'
+import Card from '../../components/Card/Card';
 
 class App extends Component {
 
@@ -21,10 +22,22 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.props)
+    const cards = this.props.pokemonData.map(pokemon => <Card key={pokemon.name} data={pokemon} />)
+
+    let page;
+
+    if (this.props.isLoading) {
+      page = "Loading..."
+    } else if (this.props.error) {
+      page = `${this.props.error}`
+    }
+    
     return (
       <div className='App'>
         <h1 className='header'> POKéDEX </h1>
+        <main>
+          {cards}
+        </main>
       </div>
     );
   }
