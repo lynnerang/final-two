@@ -3,6 +3,12 @@ import './App.css';
 
 class App extends Component {
 
+  componentDidMount() {
+    fetch('/pokemon')
+      .then(res => res.json())
+    .then(data => console.log(data))
+  }
+
   render() {
     return (
       <div className='App'>
