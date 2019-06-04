@@ -3,10 +3,10 @@ import React from 'react';
 const Card = props => {
   const { name, weight, sprites } = props.data;
 
-  const spriteList = Object.values(sprites).map(sprite => {
+  const spriteList = Object.values(sprites).map((sprite, i) => {
     let result;
     if (sprite) {
-      result = <img src={sprite} alt={`${name} sprite`}/>
+      result = <img src={sprite} alt={`${name} sprite`} key={i}/>
     }
     return result;
   })
