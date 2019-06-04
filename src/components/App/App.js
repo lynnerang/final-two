@@ -11,12 +11,12 @@ class App extends Component {
       .then(data => {
         this.props.addPokemonData(data)
         this.props.setError('')
-        this.props.isLoading(false)
+        this.props.setLoading(false)
       })
       .catch(err => {
         console.log(err)
         this.props.setError('Unable to fetch pokemon data')
-        this.props.isLoading(false)
+        this.props.setLoading(false)
       })
   }
 
